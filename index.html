@@ -5,18 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>management</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum harum amet temporibus non. Modi eaque animi
-    distinctio, repudiandae dignissimos harum doloribus dolore voluptatibus, repellat facere pariatur obcaecati non
-    vitae. Deserunt dicta ipsam nulla quia neque iusto blanditiis fuga esse, adipisci earum, cumque nesciunt rerum.
-    Aliquid dignissimos delectus deleniti quos fugit, doloribus explicabo tempore reiciendis! Molestiae nulla atque
-    veritatis assumenda consequuntur, modi, dicta nisi molestias similique porro neque iste iusto adipisci tempore unde
-    recusandae dolores, quos laudantium dignissimos? Dicta et, autem eligendi explicabo, ratione possimus facilis fugiat
-    atque qui maiores veritatis libero aliquid magnam, minus necessitatibus in ipsam illo ipsa cumque.</h1>
 
 <body>
+    <header>
+        <h1 class="text-6xl mt-8 mb-4 font-semibold text-center">Let's Get Some <span class="text-purple-700">Money
+                !!!</span></h1>
+    </header>
 
+    <main class=" w-3/4 mx-auto">
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-8">
+                <div class="bg-blue-400 p-8 rounded text-white">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h3 class="text-4xl">$<span id="total-deposit">00</span></h3>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded text-white">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h3 class="text-4xl">$<span id="total-draw">00</span></h3>
+                </div>
+                <div class="bg-green-300 p-8 rounded text-white">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h3 class="text-4xl">$<span id="total-balance">10000</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw section -->
+        <section class="my-8">
+            <div class="grid grid-cols-2 gap-8 text-white">
+                <div class="bg-red-200 p-8 rounded">
+                    <h3 class="text-4xl my-2">Please Deposit</h3>
+                    <input id="deposit-input" class="border border-gray-300 rounded block w-3/4 mb-4 px-2 text-black"
+                        type="text" placeholder="deposit amount">
+                    <button id="deposit-btn" class="bg-red-500 px-4 py-1 rounded">Deposit</button>
+                </div>
+                <div class="bg-purple-200 p-8 rounded">
+                    <h3 class="text-4xl my-2">Please Withdraw</h3>
+                    <input id="withdraw-input" class="border border-gray-300 rounded block w-3/4 mb-4 px-2 text-black"
+                        type="text" placeholder="withdraw-amount">
+                    <button id="withdraw-btn" class="bg-red-500 px-4 py-1 rounded">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- javascript -->
+    <script src="management.js"></script>
 </body>
 
 </html>
